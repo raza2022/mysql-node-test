@@ -1,32 +1,31 @@
-<!doctype html>
-    <html ng-app="app"  ng-controller="app">
-    <head>
-        <title>Connecting nodejs app to Mysql</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-<body>
-<div class="container">
-    <div class="app-heading">
-        <h2>
-            Connecting nodejs app to Mysql
-        </h2>
-    </div>
-</div>
-<div class="container">
-    <div class="app">
-        <input type="text" class="form-control " ng-model="suggestion" placeholder="Type something here....">
-        <div ng-show="suggestionCollection.length > 0" class="container suggestion-container">
-            <div class="suggestion-collection">
-                <div ng-repeat="suggestion in suggestionCollection">
-                    {{suggestion.title}}
-                    <hr/>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-<script src="js/script.js"></script>
+<html ng-app="app"  ng-controller="app">
+	<head>
+		<title>Connecting nodejs app to Mysql</title>
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/style.css">
+  	</head>
+  	<body>
+    	<div class="container">
+			<div class="app-heading">
+				<h2>
+					Connecting nodejs app to Mysql
+				</h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="app">
+				<input type="text" class="form-control " ng-model="suggestion" placeholder="Type something here....">
+				<div ng-show="suggestionCollection.length > 0" class="container suggestion-container">
+					<div class="suggestion-collection">
+						<div ng-repeat="suggestion in suggestionCollection">
+							{{suggestion.title}}
+							<hr/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body> 
+	<script src="js/angular.min.js"></script>
+	<script src="js/script.js"></script>
 </html>
